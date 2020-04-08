@@ -10,7 +10,6 @@
     ],
     "require": {
         "php": ">=7.0",
-        "pimple/pimple": "^3.2",
         "guzzlehttp/guzzle": "^6.5"
     },
     "autoload": {
