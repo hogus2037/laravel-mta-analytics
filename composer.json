@@ -1,0 +1,31 @@
+{
+    "name": "hogus/laravel-mta-analytics",
+    "description": "mta",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hogus",
+            "email": "hogus2037@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "pimple/pimple": "^3.2",
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hogus\\LaravelMtaAnalytics\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hogus\\LaravelMtaAnalytics\\ServiceProvider"
+            ],
+            "aliases": {
+                "Mta": "Hogus\\LaravelMtaAnalytics\\Facade\\MTA"
+            }
+        }
+    }
+}
