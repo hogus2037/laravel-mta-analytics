@@ -67,6 +67,14 @@ $mta->coreData('2020-01-01', '2020-01-05');
 - [使用时段](https://mta.qq.com/docs/wechat_mini_program_api.html#%E4%BD%BF%E7%94%A8%E6%97%B6%E6%AE%B5-get-analyticsperiod) period(string $start_time, string $end_time)
 - [机型](https://mta.qq.com/docs/wechat_mini_program_api.html#%E6%9C%BA%E5%9E%8B-get-analyticsmachine) machine(string $start_time, string $end_time)
 
+### App
+- [应用基本指标-离线数据](https://mta.qq.com/mta/ctr_index/open_api_detail?func_id=101) getUserOfficeData(array $params)
+- [应用基础指标-实时数据](https://mta.qq.com/mta/ctr_index/open_api_detail?func_id=102) getUserRealtimeData(array $params)
+- [终端设备数据-离线数据](https://mta.qq.com/mta/ctr_index/open_api_detail?func_id=103) getTerminalOfficeData(array $params)
+- [用户活跃度](https://mta.qq.com/mta/ctr_index/open_api_detail?func_id=104) getActiveAnalOfficeData(array $params)
+- [用户行为分析](https://mta.qq.com/mta/ctr_index/open_api_detail?func_id=105) getUsageAnalOfficeData(array $params)
+- [使用频率分析](https://mta.qq.com/mta/ctr_index/open_api_detail?func_id=106) getUsageAnalFreqDis(array $params)
+- [用户留存率](https://mta.qq.com/mta/ctr_index/open_api_detail?func_id=110) getUserOfficeData(array $params)
 ## License
 
 MIT

@@ -37,7 +37,7 @@ class BaseClient
      * @param array|string $values
      * @return string
      */
-    protected function formatToString($values)
+    public function formatToString($values)
     {
         return is_array($values) ? implode(',', $values) : $values;
     }
@@ -48,7 +48,7 @@ class BaseClient
      * @param array|string $values
      * @return string
      */
-    protected function formatUrlencode($values)
+    public function formatUrlencode($values)
     {
         return is_array($values) ? implode(',', array_map(function ($value) {
             return urlencode($value);
