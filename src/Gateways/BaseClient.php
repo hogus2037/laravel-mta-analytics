@@ -26,11 +26,41 @@ class BaseClient
         $this->secret_key = $secret_key;
     }
 
+    /**
+     * getBaseUri
+     *
+     * @return string
+     */
     public function getBaseUri()
     {
         return $this->url;
     }
 
+    /**
+     * setAppid
+     *
+     * @param $value
+     * @return $this
+     */
+    public function setAppid($value)
+    {
+        $this->app_id = $value;
+        
+        return $this;
+    }
+
+    /**
+     * setSecretKey
+     *
+     * @param $value
+     * @return $this
+     */
+    public function setSecretKey($value)
+    {
+        $this->secret_key = $value;
+        
+        return $this;
+    }
     /**
      * formatToString
      *

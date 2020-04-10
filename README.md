@@ -21,7 +21,8 @@ $ php artisan vendor:publish --provider="Hogus\LaravelMtaAnalytics\ServiceProvid
 
 ```php
 $mta = Mta::gateway('h5'); // h5,mini,app
-
+// App 区别于ios或安卓，使用同一个appid，不同的serect_key获取的是各自平台的数据。如要获取其他平台，使用前应使用setSecretKey()方法覆盖当前的secret_key
+// $mta->setSecretKey("app_key");
 $mta->coreData('2020-01-01', '2020-01-05');
 ```
 ### H5
